@@ -1,16 +1,57 @@
-# React + Vite
+# 📱 PhoneZone - E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce web application for smartphones built with React, featuring real-time product data integration and shopping cart functionality.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Catalog**: Browse smartphones with real-time data from DummyJSON API
+- **Shopping Cart**: Add products to cart with live counter updates
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Loading States**: Smooth UX with loading indicators
+- **Auto-hide Navbar**: Enhanced user experience with scroll-based navigation
+- **React Router**: Multi-page navigation with clean URLs
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **React Router** - Navigation
+- **DummyJSON API** - Product data
+- **Git & GitHub** - Version control
 
-## Expanding the ESLint configuration
+## 📦 Installation
+```bash
+# Clone the repository
+git clone https://github.com/moamen177/phone-zone.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate to project directory
+cd phone-zone
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🎯 Learning Outcomes
+
+This project helped me practice:
+- React hooks (useState, useEffect)
+- API integration with fetch
+- Component-based architecture
+- Props and state management
+- Responsive design principles
+- Git workflow and version control
+
+## 👨‍💻 Author
+
+**Moamen Mustafa**
+- GitHub: [@moamen177](https://github.com/moamen177)
+- LinkedIn: [Moamen Mustafa](https://www.linkedin.com/in/mo-men-mustafa-3161a5253)
+- Email: momenmustafa30@gmail.com
+
+## 📝 License
+
+This project is open source and available under the MIT License.
