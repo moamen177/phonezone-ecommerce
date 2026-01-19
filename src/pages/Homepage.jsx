@@ -1,21 +1,22 @@
-
 import { Link } from 'react-router-dom'
+import { FaShippingFast, FaCheckCircle, FaTags } from 'react-icons/fa'
 
 export default function Homepage() {
   return (
-    <div className='w-full'>
+    <div className='w-full bg-base-100'>
+
       {/* Hero Section */}
-      <section className=' bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20'>
+      <section className='bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white py-24'>
         <div className='container mx-auto px-4 text-center'>
-          <h1 className='text-5xl font-bold mb-4'>
-            Welcome to PhoneZone 📱
+          <h1 className='text-5xl md:text-6xl font-extrabold mb-6'>
+            PhoneZone
           </h1>
-          <p className='text-xl mb-8'>
-            Discover the latest smartphones at the best prices
+          <p className='text-lg md:text-xl mb-10 opacity-90'>
+            The smartest way to buy your next smartphone
           </p>
-          <Link 
-            to='/products' 
-            className='bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block'
+          <Link
+            to='/products'
+            className='btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-black transition'
           >
             Shop Now
           </Link>
@@ -23,60 +24,69 @@ export default function Homepage() {
       </section>
 
       {/* Features Section */}
-      <section className='py-16 bg-gray-50'>
+      <section className='py-20 bg-base-200'>
         <div className='container mx-auto px-4'>
-          <h2 className='text-3xl font-bold text-center mb-12'>
-            Why Choose PhoneZone?
+          <h2 className='text-4xl font-bold text-center mb-14'>
+            Why PhoneZone?
           </h2>
-          
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+
             {/* Feature 1 */}
-            <div className='bg-white p-6 rounded-lg shadow-md text-center'>
-              <div className='text-4xl mb-4'>🚚</div>
-              <h3 className='text-xl font-bold mb-2'>Fast Delivery</h3>
-              <p className='text-gray-600'>
-                Get your phone delivered within 24 hours
-              </p>
+            <div className='card bg-base-100 shadow-xl hover:scale-105 transition'>
+              <div className='card-body text-center'>
+                <FaShippingFast className='text-5xl mx-auto text-primary mb-4' />
+                <h3 className='card-title justify-center'>Fast Delivery</h3>
+                <p className='text-gray-500'>
+                  Get your phone delivered in record time
+                </p>
+              </div>
             </div>
 
             {/* Feature 2 */}
-            <div className='bg-white p-6 rounded-lg shadow-md text-center'>
-              <div className='text-4xl mb-4'>💯</div>
-              <h3 className='text-xl font-bold mb-2'>Quality Products</h3>
-              <p className='text-gray-600'>
-                100% authentic smartphones from trusted brands
-              </p>
+            <div className='card bg-base-100 shadow-xl hover:scale-105 transition'>
+              <div className='card-body text-center'>
+                <FaCheckCircle className='text-5xl mx-auto text-success mb-4' />
+                <h3 className='card-title justify-center'>Original Products</h3>
+                <p className='text-gray-500'>
+                  Guaranteed authentic devices from top brands
+                </p>
+              </div>
             </div>
 
             {/* Feature 3 */}
-            <div className='bg-white p-6 rounded-lg shadow-md text-center'>
-              <div className='text-4xl mb-4'>💰</div>
-              <h3 className='text-xl font-bold mb-2'>Best Prices</h3>
-              <p className='text-gray-600'>
-                Competitive prices with amazing deals
-              </p>
+            <div className='card bg-base-100 shadow-xl hover:scale-105 transition'>
+              <div className='card-body text-center'>
+                <FaTags className='text-5xl mx-auto text-secondary mb-4' />
+                <h3 className='card-title justify-center'>Best Deals</h3>
+                <p className='text-gray-500'>
+                  Exclusive prices you won’t find elsewhere
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className='py-16'>
+      <section className='py-20 bg-gradient-to-r from-base-100 to-base-200'>
         <div className='container mx-auto px-4 text-center'>
-          <h2 className='text-3xl font-bold mb-4'>
-            Ready to find your perfect phone?
+          <h2 className='text-4xl font-bold mb-6'>
+            Find Your Next Phone Today
           </h2>
-          <p className='text-gray-600 mb-8'>
-            Browse our collection of the latest smartphones
+          <p className='text-gray-500 mb-10'>
+            Explore our collection of premium smartphones
           </p>
-          <Link 
-            to='/products' 
-            className='bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block'
+          <Link
+            to='/products'
+            className='btn btn-primary btn-lg'
           >
-            View All Products
+            View Products
           </Link>
         </div>
       </section>
+
     </div>
   )
 }
